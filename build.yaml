@@ -16,9 +16,18 @@
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
 #
+## ---
+## include:
+##   - board: nice_nano_v2
+##     shield: microdox_left
+##   - board: nice_nano_v2
+##     shield: microdox_right
+
 ---
-include:
-  - board: nice_nano_v2
-    shield: microdox_left
-  - board: nice_nano_v2
-    shield: microdox_right
+file_format: "1"
+id: kinesis-kint-nn2
+name: Kinesis/n!n/Kint
+type: shield
+url: https://github.com/cub-uanic/zmk-config-kinesis-kint-nn2.git
+features:
+  - keys
